@@ -1,1 +1,2 @@
 # SickPotato
+read me info
