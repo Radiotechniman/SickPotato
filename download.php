@@ -1,4 +1,4 @@
-#!/usr/bin/php
+
 <?php
 /**
  * Auto-download from RSS feeds
@@ -21,14 +21,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-// Include RPC class
-//require_once( dirname( __FILE__ ) . '/lib/TransmissionRPC.class.php' );
-//require_once( dirname( __FILE__ ) . '/lib/DirectoryScanResult.class.php' );
-
+#!/usr/bin/php
 if(!file_exists("config.ini"))
     die("Please create a config.ini file".PHP_EOL);
-
+else
+	echo "config found" ;
+	
 // config file
 $config = parse_ini_file("config.ini", true);
 

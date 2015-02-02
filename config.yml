@@ -1,0 +1,130 @@
+templates:
+  tv:
+    exists_series:
+      - /share/Multimedia/Serie/
+      - /share/Download/transmission/completed/_Series/
+    transmission:
+      host: localhost
+      port: 9091
+      username: niels
+      password: fioenniels
+      main_file_only: yes
+      include_subs: yes
+      enabled: yes
+tasks:
+  Download_Show_NCIS:
+    rss: http://kickass.so/usearch/Dutchreleaseteam%20NCIS%20-los%20-720pcategory%3Atv?$
+    series:
+      - NCIS:
+          path: /share/Download/transmission/completed/_Series/{{ tvdb_series_name }}
+    template: tv
+  Download_Show_Castle:
+    rss: http://kickass.so/usearch/dutchreleaseteam%20Castle/?rss=1
+    series:
+      - Castle (2009):
+          set:
+            thetvdb_id: 83462
+    template: tv
+  Download_Show_Grimm:
+    rss: http://kickass.so/usearch/grimm%20DutchReleaseTeam%20-720p/?rss=1
+    series:
+      - Grimm
+    template: tv
+  Download_Show_Glee:
+    rss: http://kickass.so/usearch/Dutchreleaseteam%20glee%20-720p%20category%3Atv?rss=1
+    series:
+      - Glee
+    template: tv
+  Download_Show_Two_Half_Men:
+    rss: http://kickass.so/usearch/Two%20and%20a%20Half%20Men%20dutch%20-720p/?rss=1
+    series:
+      - Two and a Half Men:
+          set:
+            thetvdb_id: 72227
+    template: tv
+  Download_Show_BigBang:
+    rss: http://kickass.so/usearch/category%3Atv%20big%20bang%20theory%20nl%20sub%20dmt/?rss=1
+    series:
+      - The Big Bang Theory:
+          set:
+            thetvdb_id: 80379
+            tvdb_series_name: The Big Bang Theory
+    template: tv
+  Download_Show_Elementary:
+    rss: http://kickass.so/usearch/nl%20subs%20Elementary/?rss=1
+    series:
+      - Elementary:
+          set:
+            thetvdb_id: 255316
+    template: tv
+  Download_Show_Mentalist:
+    rss: http://kickass.so/usearch/nl%20subs%20Elementary/?rss=1
+    series:
+      - The Mentalist:
+          set:
+            thetvdb_id: 82459
+    template: tv
+  Download_Show_OnceUponATime:
+    rss: http://kickass.so/usearch/Dutchreleaseteam%20once%20upon%20a%20time%20-%20720p/?rss=1
+    series:
+      - Once Upon A Time:
+          set:
+            thetvdb_id: 248835
+    template: tv
+  Download_Show_Originals:
+    rss: http://kickass.so/usearch/dutchrelease%20originals/?rss=1
+    series:
+      - The Originals:
+          set:
+            thetvdb_id: 266883
+    template: tv
+  Download_Show_Ascension:
+    rss: http://kickass.so/usearch/DutchReleaseTeam%20-720p%20ascension/?rss=1
+    series:
+      - Ascension:
+          set:
+            thetvdb_id: 279553
+    template: tv
+  Download_Show_Gotham:
+    rss: http://kickass.so/usearch/DutchReleaseTeam%20-720p%20gotham/?rss=1
+    series:
+      - Gotham:
+          set:
+            thetvdb_id: 274431
+    template: tv
+  Download_Show_12monkeys:
+    rss: http://kickass.so/usearch/dundy%20category%3Atv%2012%20monkeys/?rss=1
+    series:
+      - 12 Monkeys:
+          set:
+            thetvdb_id: 272644
+    template: tv
+  Download_Show_Helix:
+    rss: http://kickass.so/usearch/category%3Atv%20helix%20nl%20subs/?rss=1
+    series:
+      - Helix:
+          set:
+            thetvdb_id: 265912
+    template: tv
+  Download_Show_Blacklist:
+    rss: http://kickass.so/usearch/category%3Atv%20blacklist%20nl%20subs%20hdtvx264/?rss=1
+    series:
+      - The Blacklist:
+          set:
+            thetvdb_id: 266189
+    template: tv
+  Download_Show_Constantine:
+    rss: http://kickass.so/usearch/category%3Atv%20constantine%20nl%20subs%20hdtvx264/?rss=1
+    series:
+      - Constantine:
+          set:
+            thetvdb_id: 273690
+    template: tv
+  Download_Show_Librarians:
+    rss: http://kickass.so/usearch/category%3Atv%20librarians%20nl%20subs%20hdtvx264/?rss=1
+    series:
+      - The Librarians:
+          set:
+            thetvdb_id: 273690
+    template: tv
+	
